@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Sora:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    outline: none; 
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+$red: #f00;
+$black: #000;
+$white: #fff;
+$light-white: #aaa;
+$light-bg: #111;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: $black;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $red;
+    }
+}
+
+body{
+    background: $black;
+}
+//HEADER-------------------------------------------------------------------
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    background: $black;
+
+    .logo{
+        font-weight: bolder;
+        color: $white;
+        font-size: 3rem;
+        span{
+            color: $red;
+        }
+    }
+    
+    .navbar a{
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        font-size: 1.7rem;
+        color: $white;
+
+        &:hover{
+            background: $red;
+        }
+    }
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color: $white;
+    cursor: pointer;
+    display: none;
+}
+//FIMHEADER-------------------------------------------------------------------
+
+
+
+
+
+
+//MEDIA QUERIES-------------------------------------------------------------------
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn{
+        display: inline-block;
+        &.fa-times{
+            transform: rotate(180deg);
+        }
+    }
+
+    .header{
+        padding: 2rem;
+
+        .navbar{
+            position: absolute;
+            top: 99%; left: 0; right: 0;
+            background: $black;
+
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); // faz os bgl sumir, um retangulo de uma linha, de natureza já
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); //é a classe active que nos add, faz aparecer.
+            }
+
+            a{
+                display: block;
+                font-size: 2rem;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+}
