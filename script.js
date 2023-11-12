@@ -23,3 +23,9 @@ var swiper = new Swiper(".home-slider", {
       clickable: true,
     },
 });
+
+//cardswipper
+var swiper2 = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+});
