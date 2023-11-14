@@ -143,6 +143,9 @@ section{
 }
 //FIMHOME---------------------------------------------------------------------
 //ABOUT-----------------------------------------------------------------------
+.gambiarra{
+    display: none;
+}
 .swiper2 {
     width: 240px;
     height: 320px;
@@ -151,28 +154,30 @@ section{
     justify-content: center;
     border-radius: 18px;
     color: #fff;
-    position: absolute;
     .swiper-wrapper{
         position: relative;
     }
 }
 
 .sobre-texto{
-    display: flex;
     align-items: center;
     justify-content: center;
     color: $white;
     h3{
         font-size: 3rem;
+        text-align: center;
     }
     p{
         font-size: 1.7rem;
         padding: 1rem 0;
         line-height: 1.5;
+        text-align: center;
     }
 }
-.about div{
-    flex: 1;
+.about {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 4rem;
 }
 
 //FIMABOUT--------------------------------------------------------------------
@@ -206,6 +211,23 @@ section{
     }
     .home-slider{
         max-height: 70vh;
+    }
+
+    //about
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .swiper2{
+            display: flex;
+            max-width: 240px;
+            max-height: 320px;
+        }
+        .sobre-texto{
+            text-align: center;
+        }
     }
 }
 

@@ -130,6 +130,10 @@ section {
   background: #f00;
 }
 
+.gambiarra {
+  display: none;
+}
+
 .swiper2 {
   width: 240px;
   height: 320px;
@@ -138,29 +142,31 @@ section {
   justify-content: center;
   border-radius: 18px;
   color: #fff;
-  position: absolute;
 }
 .swiper2 .swiper-wrapper {
   position: relative;
 }
 
 .sobre-texto {
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
 }
 .sobre-texto h3 {
   font-size: 3rem;
+  text-align: center;
 }
 .sobre-texto p {
   font-size: 1.7rem;
   padding: 1rem 0;
   line-height: 1.5;
+  text-align: center;
 }
 
-.about div {
-  flex: 1;
+.about {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 4rem;
 }
 
 @media (max-width: 991px) {
@@ -184,6 +190,21 @@ section {
   }
   .home-slider {
     max-height: 70vh;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .swiper2 {
+    display: flex;
+    max-width: 240px;
+    max-height: 320px;
+  }
+  .about .sobre-texto {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
