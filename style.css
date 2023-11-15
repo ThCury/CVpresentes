@@ -169,6 +169,50 @@ section {
   gap: 4rem;
 }
 
+.produtos {
+  color: #fff;
+}
+.produtos .rlg {
+  padding-bottom: 7vh;
+}
+.produtos .rlg p {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.produtos .rlg h3 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.curyevitorrelogio {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 4rem;
+}
+.curyevitorrelogio a {
+  text-align: center;
+  text-decoration: none;
+  color: #f00;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.curyevitorrelogio h3 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.curyevitorrelogio p {
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.curyevitorrelogio img {
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -205,6 +249,11 @@ section {
   }
   .about .sobre-texto {
     text-align: center;
+  }
+  .curyevitorrelogio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {

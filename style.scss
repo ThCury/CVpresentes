@@ -181,7 +181,58 @@ section{
 }
 
 //FIMABOUT--------------------------------------------------------------------
+//INICIO PRODUTOS-------------------------------------------------------------
+.produtos{
+    color: $white;
+    .rlg{
+        p{
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        h3{
+            font-size: 3rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        padding-bottom: 7vh;
+    }
+}
+.curyevitorrelogio{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 4rem;
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $red;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    h3{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    p{
+        font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}
 
+
+
+
+
+
+
+
+//FIMPRODUTOS-----------------------------------------------------------------
 
 
 
@@ -229,6 +280,13 @@ section{
             text-align: center;
         }
     }
+    //relogios
+    .curyevitorrelogio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    //camisas
 }
 
 @media (max-width: 768px) {

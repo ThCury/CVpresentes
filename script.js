@@ -1,3 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 AOS.init();
 
 
@@ -15,7 +48,7 @@ window.onscroll = () => {
     navbar.classList.remove('active'); //vai dar a classe active para o navbar, que faz o "polígono cheio"
 };
 
-//swiper
+//swiper inicial
 var swiper = new Swiper(".home-slider", {
     spaceBetween: 20,
     effect: "fade",
