@@ -198,9 +198,11 @@ section{
         padding-bottom: 7vh;
     }
 }
+//RELOGIOS--------------------------------------------------------------------
 .curyevitorrelogio{
     display: grid;
-    grid-template-columns: 4fr 4fr;
+    grid-template: 
+    "curyrlg vitorrlg";
     gap: 4rem;
     a{
         text-align: center;
@@ -220,6 +222,7 @@ section{
         line-height: 1.5;
         margin-right: 2rem;
         margin-left: 2rem;
+        padding-bottom: 20px !important;
     }
     img{
         display: block;
@@ -227,6 +230,35 @@ section{
         padding: 5px;
     }
 }
+.curyrelogios{
+    grid-area: curyrlg;
+    display: grid;
+    grid-template:
+    "samsungrelogio
+    relogiolacoste";
+}
+.samsungrelogio{
+    grid-area: samsungrlg;
+}
+.relogiolacoste{
+    grid-area: lacostelg;
+}
+
+.vitorrelogios{
+    grid-area: vitorrlg;
+    display: grid;
+    grid-template: 
+    "salveiirelogio
+    richesubmariner":
+}
+.salveiirelogio{
+    grid-area: salveiirlg;
+}
+.richesubmariner{
+    grid-area: richelg;
+}
+//FIM RELOGIOS----------------------------------------------------------------
+//INICIO CAMISAS--------------------------------------------------------------
 
 
 

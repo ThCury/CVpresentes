@@ -188,7 +188,7 @@ section {
 
 .curyevitorrelogio {
   display: grid;
-  grid-template-columns: 4fr 4fr;
+  grid-template: "curyrlg vitorrlg";
   gap: 4rem;
 }
 .curyevitorrelogio a {
@@ -209,11 +209,21 @@ section {
   line-height: 1.5;
   margin-right: 2rem;
   margin-left: 2rem;
+  padding-bottom: 20px !important;
 }
 .curyevitorrelogio img {
   display: block;
   margin: auto;
   padding: 5px;
+}
+
+.curyrelogios {
+  grid-area: curyrlg;
+  display: grid;
+}
+
+.vitorrelogios {
+  grid-area: vitorrlg;
 }
 
 @media (max-width: 991px) {
