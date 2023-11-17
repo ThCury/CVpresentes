@@ -126,7 +126,6 @@ section{
             h3{
                 font-size: 5rem;
                 color: $white;
-                padding: 1rem 0;
             }
         }
     }
@@ -184,6 +183,18 @@ section{
 //INICIO PRODUTOS-------------------------------------------------------------
 .produtos{
     color: $white;
+    span{
+        color: $red;
+    }
+    .relogios{
+        padding-bottom: 10vh;
+    }
+    .camisas{
+        padding-bottom: 10vh;
+    }
+    .tenis{
+        padding-bottom: 10vh;
+    }
     .rlg{
         p{
             font-size: 2rem;
@@ -191,15 +202,43 @@ section{
             line-height: 1.5;
         }
         h3{
-            font-size: 3rem;
+            font-size: 4rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        padding-bottom: 7vh;
+    }
+    .cms{
+        p{
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        h3{
+            font-size: 4rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        padding-bottom: 7vh;
+    }
+    .tns{
+        p{
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        h3{
+            font-size: 4rem;
             text-align: center;
             line-height: 1.5;
         }
         padding-bottom: 7vh;
     }
 }
+
 //RELOGIOS--------------------------------------------------------------------
 .curyevitorrelogio{
+    align-items: start;
     display: grid;
     grid-template: 
     "curyrlg vitorrlg";
@@ -233,33 +272,101 @@ section{
 .curyrelogios{
     grid-area: curyrlg;
     display: grid;
-    grid-template:
-    "samsungrelogio
-    relogiolacoste";
-}
-.samsungrelogio{
-    grid-area: samsungrlg;
-}
-.relogiolacoste{
-    grid-area: lacostelg;
 }
 
 .vitorrelogios{
     grid-area: vitorrlg;
     display: grid;
-    grid-template: 
-    "salveiirelogio
-    richesubmariner":
 }
-.salveiirelogio{
-    grid-area: salveiirlg;
-}
-.richesubmariner{
-    grid-area: richelg;
-}
+
 //FIM RELOGIOS----------------------------------------------------------------
 //INICIO CAMISAS--------------------------------------------------------------
+.curyevitorcamisas{
+    align-items: start;
+    display: grid;
+    grid-template: 
+    "curycms vitorcms";
+    gap: 4rem;
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $red;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    h3{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    p{
+        font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding-bottom: 20px !important;
+    }
+    img{
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+}
+.curycamisas{
+    grid-area: curycms;
+    display: grid;
+}
 
+.vitorcamisas{
+    grid-area: vitorcms;
+    display: grid;
+}
+//FIM CAMISAS--------------------------------------------------------------------
+//INICIO TENIS-------------------------------------------------------------------
+.curyevitortenis{
+    align-items: start;
+    display: grid;
+    grid-template: 
+    "curytns vitortns";
+    gap: 4rem;
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $red;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    h3{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    p{
+        font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding-bottom: 20px !important;
+    }
+    img{
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+}
+.curytenis{
+    grid-area: curytns;
+    display: grid;
+}
+
+.vitortenis{
+    grid-area: vitortns;
+    display: grid;
+}
+//FIM TENIS--------------------------------------------------------------------
+//FIM PRODUTOS-----------------------------------------------------------------
 
 
 
@@ -322,6 +429,18 @@ section{
         flex-direction: column;
     }
     //camisas
+    .curyevitorcamisas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    //tenis
+    .curyevitortenis{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    //fimprodutos
 }
 
 @media (max-width: 768px) {

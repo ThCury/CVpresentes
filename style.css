@@ -117,7 +117,6 @@ section {
 .home .slide .content h3 {
   font-size: 5rem;
   color: #fff;
-  padding: 1rem 0;
 }
 
 .swiper-pagination-bullet {
@@ -172,6 +171,18 @@ section {
 .produtos {
   color: #fff;
 }
+.produtos span {
+  color: #f00;
+}
+.produtos .relogios {
+  padding-bottom: 10vh;
+}
+.produtos .camisas {
+  padding-bottom: 10vh;
+}
+.produtos .tenis {
+  padding-bottom: 10vh;
+}
 .produtos .rlg {
   padding-bottom: 7vh;
 }
@@ -181,12 +192,39 @@ section {
   line-height: 1.5;
 }
 .produtos .rlg h3 {
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.produtos .cms {
+  padding-bottom: 7vh;
+}
+.produtos .cms p {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.produtos .cms h3 {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.produtos .tns {
+  padding-bottom: 7vh;
+}
+.produtos .tns p {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.produtos .tns h3 {
+  font-size: 4rem;
   text-align: center;
   line-height: 1.5;
 }
 
 .curyevitorrelogio {
+  align-items: start;
   display: grid;
   grid-template: "curyrlg vitorrlg";
   gap: 4rem;
@@ -224,6 +262,91 @@ section {
 
 .vitorrelogios {
   grid-area: vitorrlg;
+  display: grid;
+}
+
+.curyevitorcamisas {
+  align-items: start;
+  display: grid;
+  grid-template: "curycms vitorcms";
+  gap: 4rem;
+}
+.curyevitorcamisas a {
+  text-align: center;
+  text-decoration: none;
+  color: #f00;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.curyevitorcamisas h3 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.curyevitorcamisas p {
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding-bottom: 20px !important;
+}
+.curyevitorcamisas img {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+.curycamisas {
+  grid-area: curycms;
+  display: grid;
+}
+
+.vitorcamisas {
+  grid-area: vitorcms;
+  display: grid;
+}
+
+.curyevitortenis {
+  align-items: start;
+  display: grid;
+  grid-template: "curytns vitortns";
+  gap: 4rem;
+}
+.curyevitortenis a {
+  text-align: center;
+  text-decoration: none;
+  color: #f00;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.curyevitortenis h3 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.curyevitortenis p {
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding-bottom: 20px !important;
+}
+.curyevitortenis img {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+.curytenis {
+  grid-area: curytns;
+  display: grid;
+}
+
+.vitortenis {
+  grid-area: vitortns;
+  display: grid;
 }
 
 @media (max-width: 991px) {
@@ -264,6 +387,16 @@ section {
     text-align: center;
   }
   .curyevitorrelogio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .curyevitorcamisas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .curyevitortenis {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
